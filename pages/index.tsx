@@ -2,13 +2,6 @@ import { useContext } from 'react'
 import { ConfigCtx, Card, Switch } from '@components'
 import { themes } from '@styles/themes'
 
-// TODO: ghost and half done attribution link
-// TODO: features list page
-// TODO: colors palette page
-// TODO: 404 error page
-// TODO: dynamic routes demo
-// TODO: purge font-awesome
-
 const HomePage = () => {
   const { siteData, theme, setTheme } = useContext(ConfigCtx)
 
