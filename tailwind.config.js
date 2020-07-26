@@ -1,6 +1,6 @@
 const { colors: tailwindColors } = require('tailwindcss/defaultTheme')
-const { colors } = require('./styles/colors')
-const { themes } = require('./styles/themes')
+const { colors } = require('./src/styles/colors')
+const { themes } = require('./src/styles/themes')
 
 const themesColors = Object.values(themes)
   .reduce((acc, theme) => [...new Set([...acc, ...Object.values(theme)])], [])
