@@ -7,7 +7,7 @@ const siteData = {
   desc: 'Nextjs Starter made by Ghost',
   favicon: '/icons/favicon.ico',
   siteUrl: 'https://halfdone-next.now.sh',
-  siteImg: '/images/siteImg.png?v=2',
+  siteImg: '/images/siteImg.png?v=3',
   creatorTwitter: '@GhostApps',
   themeColor: manifest.theme_color,
   backgroundColor: manifest.background_color,
