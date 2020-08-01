@@ -19,7 +19,11 @@ export const MetaTags = () => {
         property='og:description'
         content={siteData.desc}
       />
-      <meta property='og:image' content={siteData.siteImg} />
+      <meta property='og:url' content={siteData.siteUrl} />
+      <meta
+        property='og:image'
+        content={`${siteData.siteUrl}${siteData.siteImg}`}
+      />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:title' content={siteData.title} />
       <meta name='twitter:description' content={siteData.desc} />
@@ -45,6 +49,7 @@ export const MetaTags = () => {
         sizes='32x32'
       />
       <meta name='theme-color' content={siteData.themeColor} />
+      <link rel='canonical' href={siteData.siteUrl} />
     </Head>
   )
 }
