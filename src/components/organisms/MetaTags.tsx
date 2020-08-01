@@ -20,7 +20,6 @@ export const MetaTags = () => {
         content={siteData.desc}
       />
       <meta property='og:image' content={siteData.siteImg} />
-      <meta property='og:url' content={siteData.siteUrl} />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:title' content={siteData.title} />
       <meta name='twitter:description' content={siteData.desc} />
