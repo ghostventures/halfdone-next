@@ -32,7 +32,7 @@ export const Switch = ({ activeId, buttons, onChange }: SwitchProps) => {
     <button
       className={`
       ${!(icon || text) && 'hidden'}
-         inline-flex items-center transition-colors duration-300 ease-in focus:outline-none  hover:text-${secondary} rounded-l-full px-2 py-2 space-x-1 ${
+         inline-flex items-center transition-colors duration-300 ease-in focus:outline-none  hover:text-${secondary} rounded-l-full p-4 text-lg space-x-1 ${
         active && `bg-${onPrimary} text-${primary} rounded-full`
       }`}
       id={id}

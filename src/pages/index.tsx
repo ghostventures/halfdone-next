@@ -8,7 +8,9 @@ const HomePage = () => {
   return (
     <main className='flex flex-1'>
       <Card>
-        <h1 className='text-lg sm:text-4xl'>Welcome to {siteData.title}</h1>
+        <h1 className='text-3xl sm:text-4xl pb-2'>
+          Welcome to {siteData.title}
+        </h1>
 
         <Switch
           activeId={theme.id}
