@@ -1,9 +1,13 @@
 import { useContext } from 'react'
+import {
+  FontAwesomeIcon,
+  FontAwesomeIconProps,
+} from '@fortawesome/react-fontawesome'
 import { ConfigCtx } from '@components'
 
 type Btn = {
   id: string
-  icon?: string
+  icon?: FontAwesomeIconProps['icon']
   text?: string
 }
 
@@ -39,7 +43,7 @@ export const Switch = ({ activeId, buttons, onChange }: SwitchProps) => {
       onClick={() => onClick(id)}
       aria-label={id}
     >
-      <i className={`${!icon && 'hidden'} ${icon} `} />
+      <FontAwesomeIcon icon={icon} className='h-4' />
       <span className={`${!text && 'hidden'} `}>{text}</span>
     </button>
   )

@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { ConfigCtx, Card, Switch } from '@components'
 import { themes } from '@styles/themes'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 const HomePage = () => {
   const { siteData, theme, setTheme } = useContext(ConfigCtx)
@@ -17,11 +18,11 @@ const HomePage = () => {
           buttons={[
             {
               id: 'dark',
-              icon: 'fas fa-moon',
+              icon: faMoon,
             },
             {
               id: 'light',
-              icon: 'fas fa-sun',
+              icon: faSun,
             },
           ]}
           onChange={id => setTheme(themes[id])}
