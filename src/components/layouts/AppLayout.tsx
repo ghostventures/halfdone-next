@@ -7,7 +7,7 @@ export const AppLayout = ({ children }) => {
   return (
     <div
       id='AppLayout'
-      className={`min-h-screen font-quicksand flex text-sm sm:text-base transition-colors duration-500 ease-in-out bg-${theme.background} text-${theme.onBackground}`}
+      className={`min-h-screen flex text-sm sm:text-base transition-colors duration-500 ease-in-out bg-${theme.background} text-${theme.onBackground}`}
     >
       {children}
     </div>

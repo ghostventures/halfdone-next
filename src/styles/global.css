@@ -15,13 +15,13 @@
   font-display: swap;
 }
 
+body {
+  font-family: 'Quicksand', monospace;
+}
+
 @tailwind components;
 @tailwind utilities;
 
-.ReactCollapse--collapse {
-  transition: height 200ms;
-}
-
-button:focus {
+/* button:focus {
   outline: none;
-}
+} */
