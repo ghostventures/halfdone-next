@@ -43,7 +43,7 @@ export const Switch = ({ activeId, buttons, onChange }: SwitchProps) => {
       onClick={() => onClick(id)}
       aria-label={id}
     >
-      <FontAwesomeIcon icon={icon} className='h-4' />
+      <FontAwesomeIcon icon={icon} className={`h-4 ${!icon && 'hidden'} `} />
       <span className={`${!text && 'hidden'} `}>{text}</span>
     </button>
   )
